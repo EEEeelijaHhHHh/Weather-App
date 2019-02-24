@@ -1,0 +1,253 @@
+/* Import */
+/*
+    Flaticon icon font: Flaticon
+    Creation date: 23/02/2019 13:34
+    */
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon/Flaticon.eot");
+  src: url("../fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/flaticon/Flaticon.woff2") format("woff2"), url("../fonts/flaticon/Flaticon.woff") format("woff"), url("../fonts/flaticon/Flaticon.ttf") format("truetype"), url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg"); } }
+
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+.flaticon-facebook:before {
+  content: "\f100"; }
+
+.flaticon-instagram:before {
+  content: "\f101"; }
+
+.flaticon-twitter:before {
+  content: "\f102"; }
+
+/* Vars */
+/* Main styles */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  color: #fff; }
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style-type: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+/* Site modules */
+/* Button */
+.btn {
+  display: block;
+  width: 158px;
+  height: 52px;
+  line-height: 52px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4466c9;
+  border-radius: 5px;
+  -webkit-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
+  transition: .2s ease-in; }
+  .btn:hover {
+    background-color: #2b4695; }
+  .btn_orange {
+    background-color: #fc6a42; }
+    .btn_orange:hover {
+      background-color: #fd4f27; }
+
+.scroll-down {
+  display: block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
+  transition: .2s ease-in; }
+  .scroll-down:hover {
+    background-color: #bfbfbf; }
+  .scroll-down::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 42%;
+    left: 42%;
+    border: solid #ff4a4f;
+    border-width: 0 1px 1px 0;
+    padding: 3px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
+/* Site styles */
+/* Header */
+.header {
+  height: 110vh;
+  background: #648cff url("../img/header-bg.jpg") center bottom/cover;
+  background-repeat: no-repeat; }
+  .header-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+    background: url("../img/header-phone.png");
+    background-repeat: no-repeat;
+    background-size: 250px auto;
+    background-position: 75% 50%; }
+  .header__circle {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    position: absolute;
+    border-radius: 50%;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    top: 0;
+    left: 0; }
+    .header__circle_orange {
+      background-color: #fc6a42;
+      top: 48%;
+      left: 48%; }
+    .header__circle_blue {
+      background-color: #4466c9;
+      top: 41%;
+      left: 85%; }
+    .header__circle_white {
+      width: 59px;
+      height: 58px;
+      line-height: 58px;
+      color: #6ca3ff;
+      background-color: #fff;
+      left: 83%;
+      top: 24%; }
+    .header__circle_yellow {
+      width: 56px;
+      height: 56px;
+      line-height: 56px;
+      background-color: #fcec64;
+      color: #648cff;
+      top: 81%;
+      left: 85%; }
+  .header__nav {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%; }
+  .header__title {
+    width: 490px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 40px; }
+  .header__desc {
+    width: 400px;
+    line-height: 30px;
+    margin-bottom: 60px; }
+  .header__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .header__btn {
+    margin-right: 10px; }
+    .header__btn:last-child {
+      margin-right: 0; }
+
+/* Logo */
+.logo {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* Navigation */
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .nav-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .nav-main__item {
+      margin-right: 80px; }
+      .nav-main__item:last-child {
+        margin-right: 0; }
+    .nav-main__link {
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: .2s ease-in;
+      -o-transition: .2s ease-in;
+      transition: .2s ease-in; }
+      .nav-main__link:hover {
+        color: #fda58d; }
+  .nav-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .nav-social__item {
+      margin-right: 30px; }
+      .nav-social__item:last-child {
+        margin-right: 0; }
+    .nav-social__icon {
+      font-size: 26px;
+      color: #fff;
+      -webkit-transition: .2s ease-in;
+      -o-transition: .2s ease-in;
+      transition: .2s ease-in; }
+      .nav-social__icon:hover {
+        color: #fda58d; }

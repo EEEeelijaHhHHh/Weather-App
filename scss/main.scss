@@ -1,0 +1,233 @@
+/* Import */
+@import 'flaticon';
+
+/* Vars */
+$white: #fff;
+$black: #000;
+
+$orange: #fc6a42;
+$light-blue: #648cff;
+$dark-blue: #4466c9;
+$martinique: #353854;
+$silver: #aeaeae;
+$mercury: #e1e1e1;
+
+
+/* Main styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  color: $white;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Site modules */
+/* Button */
+.btn {
+  display: block;
+  width: 158px;
+  height: 52px;
+  line-height: 52px;
+  color: $white;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  background-color: $dark-blue;
+  border-radius: 5px;
+  transition: .2s ease-in;
+  &:hover {
+    background-color: darken($dark-blue, 15%);
+  }
+  &_orange {
+    background-color: $orange;
+    &:hover {
+      background-color: #fd4f27;
+    }
+  }
+}
+
+.scroll-down {
+  display: block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  background-color: $white;
+  cursor: pointer;
+  transition: .2s ease-in;
+  &:hover {
+    background-color: darken($white, 25%);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 42%;
+    left: 42%;
+    border: solid #ff4a4f;
+    border-width: 0 1px 1px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+  }
+}
+
+/* Site styles */
+/* Header */
+.header {
+  height: 110vh;
+  background: $light-blue url('../img/header-bg.jpg') center bottom / cover;
+  background-repeat: no-repeat;
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background: url('../img/header-phone.png');
+    background-repeat: no-repeat;
+    background-size: 250px auto;
+    background-position: 75% 50%;
+  }
+  &__circle {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    position: absolute;
+    border-radius: 50%;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    top: 0;
+    left: 0;
+    &_orange {
+      background-color: $orange;
+      top: 48%;
+      left: 48%;
+    }
+    &_blue {
+      background-color: $dark-blue;
+      top: 41%;
+      left: 85%;
+    }
+    &_white {
+      width: 59px;
+      height: 58px;
+      line-height: 58px;
+      color: #6ca3ff;
+      background-color: $white;
+      left: 83%;
+      top: 24%;
+    }
+    &_yellow {
+      width: 56px;
+      height: 56px;
+      line-height: 56px;
+      background-color: #fcec64;
+      color: $light-blue;
+      top: 81%;
+      left: 85%;
+    }
+  }
+  &__nav {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+  }
+  &__content {
+  }
+  &__title {
+    width: 490px;
+    color: $white;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  &__desc {
+    width: 400px;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+  &__btns {
+    display: flex;
+  }
+  &__btn {
+    margin-right: 10px;
+    &:last-child {margin-right: 0;}
+  }
+}
+
+
+/* Logo */
+.logo {
+  display: block;
+  text-decoration: none;
+  color: $white;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-main {
+    display: flex;
+    &__item {
+      margin-right: 80px;
+      &:last-child {margin-right: 0;}
+    }
+    &__link {
+      color: $white;
+      text-decoration: none;
+      transition: .2s ease-in;
+      &:hover {
+        color: lighten($orange, 15%);
+      }
+    }
+  }
+  &-social {
+    display: flex;
+    &__item {
+      margin-right: 30px;
+      &:last-child {margin-right: 0;}
+    }
+    &__link {
+
+    }
+    &__icon {
+      font-size: 26px;
+      color: $white;
+      transition: .2s ease-in;
+      &:hover {
+        color: lighten($orange, 15%);
+      }
+    }
+  }
+}
