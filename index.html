@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -38,36 +39,178 @@
           </div>
         </div>
       </div>
-      <div class="header__circle header__circle_white">9˚</div>
-      <div class="header__circle header__circle_orange">Sunny</div>
-      <div class="header__circle header__circle_blue">London</div>
-      <div class="header__circle header__circle_yellow">Rio</div>
+      <div class="circle circle_white header__circle_white header__circle">9˚</div>
+      <div class="circle circle_orange header__circle_orange header__circle">Sunny</div>
+      <div class="circle circle_dark-blue header__circle_dark-blue header__circle">London</div>
+      <div class="circle circle_yellow header__circle_yellow header__circle">Rio</div>
       <a href="#" class="scroll-down"></a>
     </div>
+  </header>
+
+  <div class="section">
+    <section class="features">
+      <div class="container">
+        <h2 class="section__title">Perfect Features</h2>
+        <div class="section__desc">Only necessary</div>
+        <ul class="features__content features-list">
+          <li class="features-list__item">
+            <img src="img/features/diamond.png" alt="Diamond" class="features-list__icon">
+            <div class="features-list__content">
+              <h3 class="features-list__title">Usability</h3>
+              <p class="features-list__text">Sometimes the simplest things are the hardest to find. So we created a new line for everyday life</p>
+            </div>
+          </li>
+          <li class="features-list__item">
+            <img src="img/features/parallax.png" alt="Parallax" class="features-list__icon">
+            <div class="features-list__content">
+              <h3 class="features-list__title">Parallax Effect</h3>
+              <p class="features-list__text">Sometimes the simplest things are the hardest to find. So we created a new line for everyday life</p>
+            </div>
+          </li>
+          <li class="features-list__item">
+            <img src="img/features/colors.png" alt="Colors" class="features-list__icon">
+            <div class="features-list__content">
+              <h3 class="features-list__title">Unlimites Colors</h3>
+              <p class="features-list__text">Sometimes the simplest things are the hardest to find. So we created a new line for everyday life</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="widget">
+      <div class="container">
+        <h2 class="section__title">Simple widgets</h2>
+        <div class="section__desc">Drag and Drop</div>
+      </div>
+    </section>
+
+    <section class="screenshots-wrap">
+      <div class="container">
+        <h2 class="section__title">Screenshots</h2>
+        <div class="section__desc">The brightest images</div>
+        <div class="screenshots">
+          <div class="screenshots__item">
+            <div class="screenshots__img-wrap">
+              <div class="screenshots__img screenshots__img_clouds"></div>
+              <div class="circle circle_yellow screenshots__circle_right">Cloudy</div>
+              <div class="circle circle_light-blue circle_num screenshots__circle_left">15˚</div>
+              <div class="screenshots__img-after screenshots__img-after_cloud">Cloudy</div>
+            </div>
+            <div class="screenshots__content">
+              <img src="img/screenshots/clouds-icon.png" alt="Clouds" class="screenshots__icon">
+              <h4 class="screenshots__title">When the clouds</h4>
+              <p class="screenshots__text">Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends</p>
+              <div class="screenshots__tags">
+                <div class="screenshots__tag">95%</div>
+                <div class="screenshots__tag">9˚</div>
+                <div class="screenshots__tag">Rainy</div>
+              </div>
+            </div>
+          </div>
+          <div class="screenshots__item">
+            <div class="screenshots__content">
+              <img src="img/screenshots/sun-icon.png" alt="Sun" class="screenshots__icon">
+              <h4 class="screenshots__title">When the sun</h4>
+              <p class="screenshots__text">Sometimes the simplest things are the hardest to find. So we created a new line for everyday life. Sometimes the simplest</p>
+              <div class="screenshots__tags">
+                <div class="screenshots__tag">95%</div>
+                <div class="screenshots__tag">9˚</div>
+                <div class="screenshots__tag">Rainy</div>
+              </div>
+            </div>
+            <div class="screenshots__img-wrap">
+              <div class="screenshots__img screenshots__img_right screenshots__img_sun"></div>
+              <div class="circle circle_light-orange screenshots__circle_right">Sunny</div>
+              <div class="circle circle_orange circle_num screenshots__circle_left">35˚</div>
+              <div class="screenshots__img-after screenshots__img-after_sun">Sunny</div>
+            </div>
+          </div>
+          <div class="screenshots__item">
+            <div class="screenshots__img-wrap">
+              <div class="screenshots__img screenshots__img_rain"></div>
+              <div class="circle circle_charlotte screenshots__circle_right">Rainy</div>
+              <div class="circle circle_gray-blue circle_num screenshots__circle_left">9˚</div>
+              <div class="screenshots__img-after screenshots__img-after_rain">Rainy</div>
+            </div>
+            <div class="screenshots__content">
+              <img src="img/screenshots/rain-icon.png" alt="Rain" class="screenshots__icon">
+              <h4 class="screenshots__title">When the rain</h4>
+              <p class="screenshots__text">Sometimes the simplest things are the hardest to find. So we created a new line for everyday life. Sometimes the simplest</p>
+              <div class="screenshots__tags">
+                <div class="screenshots__tag">95%</div>
+                <div class="screenshots__tag">9˚</div>
+                <div class="screenshots__tag">Rainy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-wrap">
+      <div class="container">
+        <h2 class="section__title">What people are saying</h2>
+        <div class="section__desc">Reviews</div>
+        <div class="reviews">
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <p class="reviews__text">What art offers is space - a certain breathing room for the spirit. </p>
+              <div class="reviews__author">John Updike</div>
+            </li>
+            <li class="reviews__item">
+              <p class="reviews__text">We do not see nature with our eyes, but with our understandings and our hearts.</p>
+              <div class="reviews__author">William Hazlitt</div>
+            </li>
+            <li class="reviews__item">
+              <p class="reviews__text">The only courage that matters is the kind that gets you from one moment to the next.</p>
+              <div class="reviews__author">Mignon McLaughlin</div>
+            </li>
+            <li class="reviews__item">
+              <p class="reviews__text">No man has a good enough memory to be a successful liar. </p>
+              <div class="reviews__author">Abraham Lincoln</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="dowload-wrap">
+      <div class="container">
+        <div class="dowload">
+          <h2 class="dowload__title">How Download the app?</h2>
+          <p class="dowload__text">Just download the app from the store. Simple, nice and user-friendly application of theweather. Only relevant and useful information.</p>
+          <a href="#" class="dowload__link"><img src="img/app-store.png" alt="App Store" class="dowload__img"></a><a href="#" class="dowload__link"><img src="img/google-play.png" alt="Google Play" class="dowload__img"></a>
+        </div>
+      </div>
+    </section>
   </div>
-</header>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
+  <footer class="footer">
+    <div class="container">
+      <nav class="nav nav_footer">
+        <a class="logo" href="#"><span class="logo_orange">Fun</span> <span class="logo_light-blue">Weather.</span></a>
+        <ul class="nav-main">
+          <li class="nav-main__item"><a href="#" class="nav-main__link nav-main__link_gray-suit">Home</a></li>
+          <li class="nav-main__item"><a href="#" class="nav-main__link nav-main__link_gray-suit">Features</a></li>
+          <li class="nav-main__item"><a href="#" class="nav-main__link nav-main__link_gray-suit">Reviews</a></li>
+          <li class="nav-main__item"><a href="#" class="nav-main__link nav-main__link_gray-suit">Dowload</a></li>
+        </ul>
+        <ul class="nav-social">
+          <li class="nav-social__item"><a href="#" class="nav-social__link"><i class="nav-social__icon nav-social__icon_gray-suit fi flaticon-facebook"></i></a></li>
+          <li class="nav-social__item"><a href="#" class="nav-social__link"><i class="nav-social__icon nav-social__icon_gray-suit fi flaticon-instagram"></i></a></li>
+          <li class="nav-social__item"><a href="#" class="nav-social__link"><i class="nav-social__icon nav-social__icon_gray-suit fi flaticon-twitter"></i></a></li>
+        </ul>
+      </nav>
+      <div class="copyright">© 2016 All rights reserved. Weather App Theme by Gravpix</div>
+    </div>
+  </footer>
 
-<script src="js/main.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
